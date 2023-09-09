@@ -7,4 +7,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="img.png" />
+    <None Remove="keyboard.png" />
+    <None Remove="microphone.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img.png" />
+    <Resource Include="keyboard.png" />
+    <Resource Include="microphone.png" />
+  </ItemGroup>
+
 </Project>

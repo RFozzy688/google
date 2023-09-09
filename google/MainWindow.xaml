@@ -6,7 +6,76 @@
         xmlns:local="clr-namespace:google"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF202124">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="130" />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,10,10,10">
+            <Label Foreground="White">Почта</Label>
+            <Label Foreground="White">Картинки</Label>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10">
+            <Label Foreground="White" FontSize="72">Google</Label>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox Height="20" Width="250" Background="#FF202124" Foreground="White" BorderBrush="#FF5F6368">qwerty</TextBox>
+            <Button Width="20" Height="11" Margin="3,0,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/keyboard.png" TileMode="None" Stretch="Fill"/>
+                </Button.Background>
+            </Button>
+            <Button Width="16" Height="22" Margin="3,0,0,0" BorderBrush="Transparent">
+                <Button.Background>
+                    <ImageBrush ImageSource="/microphone.png" TileMode="None" Stretch="Fill"/>
+                </Button.Background>
+            </Button>
+            <Button Width="20" Height="20" Margin="3,0,0,0" BorderBrush="Transparent">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img.png" TileMode="None" Stretch="Fill"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10">
+            <Button Padding="5,5,5,5" Background="#FF303134" Foreground="White" BorderBrush="#FF303134">Поиск в Goggle</Button>
+            <Button Margin="5,0,0,0" Padding="5,5,5,5" Background="#FF303134" Foreground="White" BorderBrush="#FF303134">Мне повезёт!</Button>
+        </StackPanel>
+
+        <Border Grid.Row="5" Grid.ColumnSpan="2" Background="#FF171717">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
+                <TextBlock Foreground="#FF9AA099">Украина</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="6" Grid.Column="0" Background="#FF171717" Margin="0,2,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
+                <TextBlock Foreground="#FF9AA099">Всё о Google</TextBlock>
+                <TextBlock Margin="20,0,0,0" Foreground="#FF9AA099">Реклама</TextBlock>
+                <TextBlock Margin="20,0,0,0" Foreground="#FF9AA099">Для Бизнеса</TextBlock>
+                <TextBlock Margin="20,0,0,0" Foreground="#FF9AA099">Как работает Goggle Поиск</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="6" Grid.Column="1" Background="#FF171717" Margin="0,2,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10,0,0,0">
+                <TextBlock Foreground="#FF9AA099">Конфиденциальность</TextBlock>
+                <TextBlock Margin="20,0,0,0" Foreground="#FF9AA099">Условия</TextBlock>
+                <TextBlock Margin="20,0,10,0" Foreground="#FF9AA099">Настройки</TextBlock>
+            </StackPanel>
+        </Border>
 
     </Grid>
 </Window>
